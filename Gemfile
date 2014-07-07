@@ -9,7 +9,10 @@ gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
-
+group :production do
+  gem 'rails_log_stdout',           github: 'heroku/rails_log_stdout'
+  gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
+end
 gem "modernizr-rails"
 gem 'gumby-framework', '~> 0.0.1'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
