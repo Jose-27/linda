@@ -14,7 +14,7 @@ group :production do
   gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
 end
 gem "modernizr-rails"
-gem 'gumby-framework', '~> 0.0.1'
+gem 'gumby-framework'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 gem 'mongoid'

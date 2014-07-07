@@ -142,7 +142,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
-  gumby-framework (~> 0.0.1)
+  gumby-framework
   jbuilder (~> 2.0)
   jquery-rails
   modernizr-rails
