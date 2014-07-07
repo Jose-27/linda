@@ -11,7 +11,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 
 gem "modernizr-rails"
-gem 'gumby-framework'
+gem 'gumby-framework', '~> 0.0.1'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 gem 'mongoid'

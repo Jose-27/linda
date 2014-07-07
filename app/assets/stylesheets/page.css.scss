@@ -1,9 +1,224 @@
+html,body{
+	width:100%;
+  height: auto;
+}
+
 .container{
-	border:1px solid red;
     width: 100%;
     height: 100%;
+    padding:0!important;
 }
-.slider1{
-	width: 100%;
-	height: 500px;
+nav{
+  width: 100%;
+  height: auto;
+  position:absolute;
+  z-index: 2;
+  text-align: center;
+  a{color:#fff!important;}
+  h1{
+    color:#fff;
+    text-shadow: 2px 2px 0px rgba(150, 150, 150, 1);
+  }
+  ul{
+    border-top:1px solid #fff;
+    width: 40%;
+    margin: 0 auto;
+
+    li{
+      color: #fff;
+      display: inline-block;
+     text-shadow: 1px 1px 0px rgba(150, 150, 150, 1);
+     font-weight: 600;
+     padding-left:10px;
+     &:hover{
+      cursor: pointer;
+     }
+    }
+  }
+}
+.slide1{
+	width:100%;
+	height:100%;
+	position:fixed;
+	background: url('image1.jpeg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: none;
+}
+.slide2{
+	width:100%;
+	height:100%;
+	position:fixed;
+	background: url('image2.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: none;
+}
+.slide3{
+	width:100%;
+	height:100%;
+	position:fixed;
+	background: url('image3.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: none;
+}
+.slide4{
+	width:100%;
+	height:100%;
+	position:fixed;
+	background: url('image4.jpg') no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: none;
+}
+.slide5{
+	width:100%;
+	height:100%;
+	position:fixed;
+	background: url('image5.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: none;
+}
+.modalDialog {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+  h2{
+    text-align: center;
+  }
+}
+.modalDialog:target {
+  opacity:1;
+  pointer-events: auto;
+}
+
+.modalDialog > div {
+  width: 50%;
+  min-width:300px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: #fff;
+  background: -moz-linear-gradient(#fff, #999);
+  background: -webkit-linear-gradient(#fff, #999);
+  background: -o-linear-gradient(#fff, #999);
+ a{color:#444444!important; font-weight:500;}
+}
+.close {
+  background: #606061;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000;
+}
+.close:hover { background: #00d9ff; }
+
+.wrap{
+  position:absolute;
+  z-index: 1000;
+  width: 80%;
+  height: auto;
+  margin:20% auto;
+  left: 10%;
+  h1{
+     color: #fff;
+  }
+  #right{
+    float: right;
+    width: 80px;
+    i{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px; 
+     background:rgba(0, 0, 0, 0.5);
+     &:hover{
+    background:rgba(0, 0, 0, 0.7);
+    }
+   }
+  }
+  #left {
+    float: left;
+    width: 80px;
+    i{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px; 
+    background:rgba(0, 0, 0, 0.5);
+     &:hover{
+    background:rgba(0, 0, 0, 0.7);
+    }
+   }
+  }
+}
+
+@media (max-width: 500px){
+ nav ul{
+  width: 90%;
+  text-align: center;
+ }
+ .modalDialog > div{
+  width: 90%!important;
+  margin: 0 auto;
+ }
+ article p{
+  font-size: 0.9em;
+ }
+ h3{
+  font-size: 1.2em!important;
+ }
+ .wrap{
+  margin-top:300px!important;
+  width: 95%;
+  left: 2%;
+  h1{
+    font-size: 4em!important;
+  }
+ }
+}
+@media (max-width: 750px){
+  nav ul{
+  width: 90%;
+  text-align: center;
+ }
+ .wrap{
+   margin-top:140px;
+ h1{
+    font-size: 4em!important;
+  }
+}
 }
